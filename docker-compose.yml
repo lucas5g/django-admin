@@ -1,0 +1,9 @@
+
+services:
+  web:
+    build: .
+    ports:
+      - "8887:8887"
+    command: python manage.py runserver 0.0.0.0:8887
+    volumes:
+      - .:/code
